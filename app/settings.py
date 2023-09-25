@@ -11,12 +11,12 @@ from pydantic_settings import BaseSettings
 
 
 class APIInfo(BaseModel):
-    title = "blacksheep-chat API"
-    version = "0.0.1"
+    title: str = "blacksheep-chat API"
+    version: str = "0.0.1"
 
 
 class App(BaseModel):
-    show_error_details = False
+    show_error_details: bool = False
 
 
 class Site(BaseModel):
